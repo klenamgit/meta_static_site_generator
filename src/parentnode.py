@@ -10,5 +10,5 @@ class ParentNode(HTMLNode):
         
         if self.children is None:
             raise ValueError("Children cannot be None for ParentNode")
-        children_html = "".join([child.to_html() for child in self.children])
+        children_html = " ".join([child.to_html() for child in self.children])
         return f"<{self.tag}{self.props_to_html()}>{children_html}</{self.tag}>"

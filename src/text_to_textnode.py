@@ -37,3 +37,4 @@ appending to the text
         else:
             new_nodes.append(TextNode(word, TextType.TEXT))
     return new_nodes   
+

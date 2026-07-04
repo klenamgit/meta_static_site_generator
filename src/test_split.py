@@ -8,7 +8,6 @@ class TestSplit(unittest.TestCase):
         TextType.TEXT,
     )
     new_nodes = split_nodes_image([node])
-    print(new_nodes)
     self.assertListEqual(
         [
             TextNode("This is text with an ", TextType.TEXT),
